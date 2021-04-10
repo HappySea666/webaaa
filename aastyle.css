@@ -1,0 +1,57 @@
+@charset "utf-8";
+html {font-size:62.5%;text-align: center;}
+body {margin:0 10rem;text-align: left;background:#f3f6f8;color:#454545;}
+a {text-decoration: none;color:#454545;}
+a:hover {text-decoration: underline;}
+.sitetop{width:100%;padding:1.5rem 0;background:#4c5779;font-size:6rem;color:#fff;text-align: center;margin-top:0;letter-spacing:1.2rem;}
+.notice{color:#ff0000;margin:1rem;font-size:4rem;font-weight: 900;}
+.aa,.cc{width:100%;height:auto;background:#b0c7df;margin:2rem 0;}
+.aa img,.cc img {width:21.1rem;height:auto;}
+.aa span,.bb span{float:right;font-size:3rem;line-height: 10rem;padding-right:10rem;font-weight: 900;}
+.cc span{float:right;font-size:3rem;line-height:10rem;padding-right:10rem;font-weight: 900;color:#ff0000;}
+.aa span a{color:#0f6c0c;} .bb span a{color:#336699;}
+.bb{width:100%;height:auto;background:#ddd;margin:2rem 0;}
+.bb img{width:21.1rem;height:auto;}
+.footer{height: 8rem;line-height:8rem;text-align: center;background:#4c5779;color:#fff;font-size:2rem;}
+/*手机版*/
+@media screen and (max-device-width: 1000px){
+body{width:95%;margin:1rem;}
+}
+
+
+@media screen and (max-device-width: 900px){
+.sitetop{font-size: 5rem;}
+.notice{font-size: 4rem;}
+.aa span,.bb span{float:right;font-size:2.5rem;line-height: 10rem;padding-right:25rem;}
+.cc span{float:right;padding-right:25rem;}
+}
+
+@media screen and (max-device-width: 800px){
+.sitetop{font-size: 4.5rem;}
+.notice{font-size: 3.5rem;}
+.aa span,.bb span{float:right;font-size:2.5rem;line-height: 10rem;padding-right:20rem;}
+.cc span{float:right;padding-right:18rem;}
+}
+
+@media screen and (max-device-width: 700px){
+.sitetop{font-size: 4rem;}
+.notice{font-size: 3rem;}
+.aa span,.bb span{float:right;font-size:2.5rem;line-height: 10rem;padding-right:15rem;}
+.cc span{padding-right:10rem;font-size: 2.5rem;}
+}
+
+@media screen and (max-device-width: 565px){
+	.notice{font-size: 2.5rem}
+	.cc span{font-size:2rem }
+}
+
+
+@media screen and (max-device-width: 540px){
+.sitetop{font-size: 3rem;}
+.notice{font-size: 2rem;}
+.aa span,.bb span{float:right;font-size:2.5rem;padding-right:5rem;}
+.cc span{padding-right:5rem;font-size: 1.6rem;}
+}
+
+@media screen and (max-device-width: 433px){.cc span{padding-right:1rem;}}
+}
