@@ -1,0 +1,36 @@
+@charset "utf-8";
+html {font-size:62.5%;text-align: center;}
+body {margin:0 10rem;text-align: left;background:#f3f6f8;color:#454545;}
+a {text-decoration: none;color:#454545;}
+a:hover {text-decoration: underline;}
+.sitetop{width:100%;padding:1.5rem 0;background:#4c5779;font-size:6rem;color:#fff;text-align: center;margin-top:0;letter-spacing:1.2rem;}
+.notice{color:#ff0000;margin:1rem;font-size:4rem;font-weight: 900;}
+.aa{width:100%;height:20rem;background:#b0c7df;margin:2rem 0;}
+.aa img,.cc img {width:auto;height:20rem;}
+.aa span,.bb span{float:right;font-size:5rem;line-height: 20rem;padding-right:10rem;font-weight: 900;}
+.cc span{float:right;font-size:5rem;line-height:20rem;padding-right:10rem;font-weight: 900;color:#ff0000;}
+.aa span a{color:#0f6c0c;} .bb span a{color:#336699;}
+.bb,.cc{width:100%;height:auto;background:#ddd;margin:2rem 0;}
+.bb img{width:auto;height:20rem;}
+.footer{height:12rem;line-height:12rem;text-align: center;background:#4c5779;color:#fff;font-size:5rem;}
+/*手机版*/
+@media screen and (max-device-width: 1000px){
+body{width:95%;margin:1rem;}
+}
+@media screen and (max-device-width: 900px){
+.aa span,.bb span{float:right;padding-right:25rem;}
+.cc span{float:right;padding-right:25rem;}
+}
+@media screen and (max-device-width: 800px){
+.aa span,.bb span{float:right;padding-right:20rem;}
+.cc span{float:right;padding-right:18rem;}
+}
+@media screen and (max-device-width: 700px){
+.aa span,.bb span{float:right;padding-right:15rem;}
+.cc span{padding-right:10rem;}
+}
+@media screen and (max-device-width: 540px){
+.aa span,.bb span{float:right;padding-right:5rem;}
+.cc span{padding-right:5rem;}
+}
+}
