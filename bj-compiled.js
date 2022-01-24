@@ -152,32 +152,8 @@ d.id+" which has a srcset width "+f+", which is bigger than its size of "+d.clie
 Wh.prototype.Bc=function(a){var b=a.data;b&&"video_resize"===b.name&&b.iframe_id&&ch().then(function(c){if(a.origin===c&&(c=document.getElementById(b.iframe_id)))if(b.widescreen){var d=c.width||320,e=c.height||266;c.setAttribute("data-original-width",d);c.setAttribute("data-original-height",e);var f=c.parentElement.offsetWidth;c.height=e*f/d;c.width=f}else c.width=c.getAttribute("data-original-width"),c.height=c.getAttribute("data-original-height")})};
 Wh.prototype.b=function(){window.removeEventListener?window.removeEventListener("message",this.Bc):window.detachEvent("onmessage",this.Bc);return Ze()};var Xh=function(){this.He=Da()},Yh=null;Xh.prototype.set=function(a){this.He=a};Xh.prototype.reset=function(){this.set(Da())};Xh.prototype.get=function(){return this.He};var Zh=function(a){this.og=a||"";Yh||(Yh=new Xh);this.Eg=Yh};g=Zh.prototype;g.Td=!0;g.Ve=!0;g.Cg=!0;g.Bg=!0;g.Xe=!1;g.Dg=!1;var $h=function(a){return 10>a?"0"+a:String(a)},ai=function(a,b){var c=(a.cf-b)/1E3,d=c.toFixed(3),e=0;if(1>c)e=2;else for(;100>c;)e++,c*=10;for(;0<e--;)d=" "+d;return d},bi=function(a){Zh.call(this,a)};t(bi,Zh);
 var ci=function(a,b){var c=[];c.push(a.og," ");if(a.Ve){var d=new Date(b.cf);c.push("[",$h(d.getFullYear()-2E3)+$h(d.getMonth()+1)+$h(d.getDate())+" "+$h(d.getHours())+":"+$h(d.getMinutes())+":"+$h(d.getSeconds())+"."+$h(Math.floor(d.getMilliseconds()/10)),"] ")}a.Cg&&c.push("[",ai(b,a.Eg.get()),"s] ");a.Bg&&c.push("[",b.ze,"] ");a.Dg&&c.push("[",b.Pa.name,"] ");c.push(b.ag);a.Xe&&(d=b.jd)&&c.push("\n",d instanceof Error?d.message:d.toString());a.Td&&c.push("\n");return c.join("")};var di=function(){this.qg=q(this.sf,this);this.jc=new bi;this.jc.Ve=!1;this.jc.Xe=!1;this.ve=this.jc.Td=!1;this.Kf={}},fi=function(){var a=ei;if(1!=a.ve){Xd();var b=Wd;var c=a.qg;b.Ib||(b.Ib=[]);b.Ib.push(c);a.ve=!0}};di.prototype.sf=function(a){function b(a){if(a){if(a.value>=Pd.value)return"error";if(a.value>=Qd.value)return"warn";if(a.value>=Sd.value)return"log"}return"debug"}if(!this.Kf[a.ze]){var c=ci(this.jc,a),d=gi;d&&hi(d,b(a.Pa),c)}};
-var ei=null,gi=l.console,hi=function(a,b,c){if(a[b])a[b](c);else a.log(c)};/*
+var ei=null,gi=l.console,hi=function(a,b,c){if(a[b])a[b](c);else a.log(c)};
 
- CC0 1.0 Universal License
- Public Domain Dedication
-
- The person(s) who associated a work with this deed has dedicated the work to
- the public domain by waiving all of his or her rights to the work worldwide
- under copyright law, including all related and neighboring rights, to the
- extent allowed by law.
-
- You can copy, modify, distribute and perform the work, even for commercial
- purposes, all without asking permission.
-
- In no way are the patent or trademark rights of any person affected by CC0,
- nor are the rights that other persons may have in the work or in how the work
- is used, such as publicity or privacy rights.
-
- Unless expressly stated otherwise, the person(s) who associated a work with
- this deed makes no warranties about the work, and disclaims liability for all
- uses of the work, to the fullest extent permitted by applicable law.
-
- When using or citing the work, you should not imply endorsement by the author
- or the affirmer.
-
- This is a human-readable summary of the Legal Code (read the full text).
- svg4everybody v2.1.8 | github.com/jonathantneal/svg4everybody */
 function ii(a,b,c){if(c){var d=document.createDocumentFragment(),e=!b.hasAttribute("viewBox")&&c.getAttribute("viewBox");e&&b.setAttribute("viewBox",e);for(b=c.cloneNode(!0);b.childNodes.length;)d.appendChild(b.firstChild);a.appendChild(d)}}
 function ji(a){a.onreadystatechange=function(){if(4===a.readyState){var b=a.nf;b||(b=a.nf=document.implementation.createHTMLDocument(""),b.body.innerHTML=a.responseText,a.Rd={});a.Sd.splice(0).map(function(c){var d=a.Rd[c.id];d||(d=a.Rd[c.id]=b.getElementById(c.id));ii(c.parent,c.Fg,d)})}};a.onreadystatechange()}function ki(){return"undefined"!=typeof LEGACY_SUPPORT&&LEGACY_SUPPORT}
 var li=function(){function a(){for(var e=0;e<E.length;){var f=E[e],h=f.parentNode,k;for(k=h;"svg"!==k.nodeName.toLowerCase()&&(k=k.parentNode,k););if(k){var m=f.getAttribute("xlink:href")||f.getAttribute("href");!m&&b.attributeName&&(m=f.getAttribute(b.attributeName));if(ki()&&d){var r=document.createElement("img");r.style.cssText="display:inline-block;height:100%;width:100%";r.setAttribute("width",k.getAttribute("width")||k.clientWidth);r.setAttribute("height",k.getAttribute("height")||k.clientHeight);
