@@ -42,6 +42,9 @@ img { border: 1px solid #ccc; }
 .post-content h3 a{font-size: 22px;}
 .post-content h3 a:hover{text-decoration:none;color:#3B6086;}
 .post-content img {display:block;margin:20px auto;}
+.post-content div.npf_row .npf_col, .post-content div.npf_row figure.tmblr-full, .post div.npf_row .npf_col, .post div.npf_row figure.tmblr-full, body div.npf_row .npf_col, body div.npf_row figure.tmblr-full {display:block!important}
+.post-content div.npf_row .npf_col figure img, .post div.npf_row .npf_col figure img, body div.npf_row .npf_col figure img {width:auto!important}
+
 .post-type-text .post-content ul {padding-left: 10px;margin-left: 2em;}
 .post-type-text .post-content ul ul {margin-bottom: 0;}
 .post-type-text .post-content ul li {list-style-type: disc;}
